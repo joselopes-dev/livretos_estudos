@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Downloads - IDPB</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Downloads - IDPB</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f0c33c;
+            padding: 20px;
+          }
+      
+          h2 {
+            margin-bottom: 20px;
+            font-size: 40px;
+          }
+      
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          }
+      
+          th, td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+          }
+      
+          th {
+            background-color: #98FB98;
+          }
+      
+          tr:hover {
+            background-color: #f0c33c;
+          }
+      
+          .folder-icon {
+            color: #2e86de;
+            margin-right: 8px;
+          }
+      
+          .actions a {
+            text-decoration: none;
+            color: #2e86de;
+            margin-right: 0px;
+          }
+      
+          .actions a:hover {
+            color: #145cb8;
+          }
+      
+          /* Esconde colunas no celular */
+          @media (max-width: 768px) {
+            .hide-mobile {
+              display: none;
+            }
+            tr{
+                font-size: 10px;
+                padding: 0;
+            }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0c33c;
-      padding: 20px;
-    }
+            h2 {
+            margin-bottom: 10px;
+            font-size: 15px;
+            margin: 30px 0px 20px 0px;
+          }
 
-    h2 {
-      margin-bottom: 20px;
-      font-size: 40px;
-    }
+          body {
+            padding: 0px;
+          }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+          th, td {
+            padding: 5px 5px;
+          }
 
-    th, td {
-      padding: 12px 16px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
+          .actions{
+            width: 65px;
+          }
 
-    th {
-      background-color: #eaeaea;
-    }
-
-    tr:hover {
-      background-color: #f1f1f1;
-    }
-
-    .folder-icon {
-      color: #2e86de;
-      margin-right: 8px;
-    }
-
-    .actions a {
-      text-decoration: none;
-      color: #2e86de;
-      margin-right: 10px;
-    }
-
-    .actions a:hover {
-      color: #145cb8;
-    }
-  </style>
-</head>
+          .idpb1 {
+            width: 65px;
+          }
+          }
+        </style>
+      </head>
+      
 <body>
   <h2>📁 Arquivos Disponíveis para Download</h2>
   <table>
@@ -62,51 +96,57 @@
       <tr>
         <th>Nome</th>
         <th>Proprietário</th>
-        <th>Última Modificação</th>
-        <th>Tamanho</th>
+        <th class="hide-mobile">Última Modificação</th>
+        <!--<th>Tamanho</th>-->
         <th>Ações</th>
       </tr>
     </thead>
-    <tbody>
+    
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i> Estudo de células - 2025</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Estudo de células</td>
+        <td class="idpb1">idpb-betania-1</td>
+        <td class="hide-mobile">14/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
-          <a href="ESTUDO DE CELULAS 2025.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <a  href="ESTUDO DE CELULAS 2025.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <br><br>
           <a href="ESTUDO DE CELULAS 2025.pdf" download><i class="fas fa-download"></i> Download</a>
         </td>
       </tr>
+
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i> Treinamento de líderes de células - 2025</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Treinamento de líderes de células</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
-          <a href="TREINAMENTO DE LIDERES DE CÉLULAS 2023.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
-          <a href="TREINAMENTO DE LIDERES DE CÉLULAS 2023.pdf" download><i class="fas fa-download"></i> Download</a>
+          <a href="TREINAMENTO DE LIDERES DE CELULAS 2025.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <br><br>
+          <a href="TREINAMENTO DE LIDERES DE CELULAS 2025.pdf" download><i class="fas fa-download"></i> Download</a>
         </td>
       </tr>
+
       <!-- Repita conforme necessário -->
 
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Oração como estilo de vida</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Oração como estilo de vida</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
           <a href="ORAÇAO COMO ESTILO DE VIDA.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <br><br>
           <a href="ORAÇAO COMO ESTILO DE VIDA.pdf" download><i class="fas fa-download"></i> Download</a>
         </td>
       </tr>
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Manual do discipulador</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Manual do discipulador</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
           <a href="MANUAL DO DISCIPULADOR.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <br><br>
           <a href="MANUAL DO DISCIPULADOR.pdf" download><i class="fas fa-download"></i>Download</a>
           
         </td>
@@ -114,73 +154,78 @@
       <!-- Repita conforme necessário -->
 
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Manual de orçamento familiar</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Manual de orçamento familiar</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
           <a href="MANAUL DE ORÇAMENTO FAMILIAR.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <br><br>
           <a href="MANAUL DE ORÇAMENTO FAMILIAR.pdf" download><i class="fas fa-download"></i>Download</a>
         </td>
       </tr>
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Livro principios e práticas para um estilo de vida cristã</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Livro principios e práticas para um estilo de vida cristã</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
             <a href="LIVRO PRINCIPIOS E PRATICAS PARA UM ESTILO DE VIDA CRISTÃ.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+            <br><br>
             <a href="LIVRO PRINCIPIOS E PRATICAS PARA UM ESTILO DE VIDA CRISTÃ.pdf" download><i class="fas fa-download"></i>Download</a>
         </td>
       </tr>
       <!-- Repita conforme necessário -->
 
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Livreto sobre o que Deus quer da família</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Livreto sobre o que Deus quer da família</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
             <a href="LIVRETO SOBRE O QUE DEUS QUER DA FAMILIA.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+            <br><br>
             <a href="LIVRETO SOBRE O QUE DEUS QUER DA FAMILIA.pdf" download><i class="fas fa-download"></i>Download</a>
         </td>
       </tr>
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Discipulado crescendo em Cristo - adulto - 2025</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Discipulado crescendo em Cristo - adulto - 2025</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
           <a href="Discipulado Crescendo em Cristo- Adulto 2025.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <br><br>
           <a href="Discipulado Crescendo em Cristo- Adulto 2025.pdf" download><i class="fas fa-download"></i>Download</a>
         </td>
       </tr>
       <!-- Repita conforme necessário -->
 
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Discipulado crescendo em Cristo - jovens - 2025</td>
-        <td>idpb-betania</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td><i class="bi bi-file-earmark-text"></i> Discipulado crescendo em Cristo - jovens - 2025</td>
+        <td>idpb-betania-1</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
             <a href="Discipulado Crescendo em Cristo - Jovens.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+            <br><br>
             <a href="Discipulado Crescendo em Cristo - Jovens.pdf" download><i class="fas fa-download"></i>Download</a>
         </td>
       </tr>
       
       <tr>
-        <td><i class="bi bi-file-earmark-text"></i>Fundamentos Básicos Doutrinários da IDPB</td>
+        <td><i class="bi bi-file-earmark-text"></i> Fundamentos Básicos Doutrinários da IDPB</td>
         <td>idpb-betania-1</td>
-        <td>12/04/2025</td>
-        <td>—</td>
+        <td class="hide-mobile">12/04/2025</td>
+        <!--<td>—</td>-->
         <td class="actions">
           <a href="Fundamentos Básicos Doutrinários da IDPB_compressed.pdf" target="_blank"><i class="fas fa-eye"></i> Visualizar</a>
+          <br><br>
           <a href="Fundamentos Básicos Doutrinários da IDPB_compressed.pdf" download><i class="fas fa-download"></i>Download</a>
         </td>
       </tr>
       <!-- Repita conforme necessário -->
-    </tbody>
-    </tbody>
+    
   </table>
 </body>
 </html>
